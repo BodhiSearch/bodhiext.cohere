@@ -39,6 +39,8 @@ todo_include_todos = False
 nitpick_ignore = [
     ("py:class", "Embedding"),
     ("py:class", "SupportsText"),
+    ("py:class", "cohere.Client"),
+    ("py:class", "cohere.client.Client"),
 ]
 # -- Options for HTML output -------------------------------------------
 html_theme = "sphinx_rtd_theme"
@@ -47,6 +49,7 @@ html_static_path = ["_static"]
 intersphinx_mapping = {
     "python": ("https://docs.python.org/", None),
     "bodhilib": ("https://bodhilib.readthedocs.io/en/stable/", None),
+    "cohere": ("https://cohere.readthedocs.io/en/latest/", None),
 }
 autodoc_default_options = {
     "typehints": "description",
